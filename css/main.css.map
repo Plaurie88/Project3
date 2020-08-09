@@ -2,9 +2,9 @@
     "version": 3,
     "mappings": "ACAA,AAAA,CAAC,CAAA;EACG,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACb;;ADEA,AAAA,IAAI,CAAC;EACF,UAAU,EEPE,OAAO;EFQnB,KAAK,EENI,IAAI;CFQf;;AAED,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;CASjB;;AAXD,AAIG,KAJE,CAIF,gBAAgB,CAAA;EACZ,WAAW,EEXT,GAAG;CFgBR;;AAVJ,AAOO,KAPF,CAIF,gBAAgB,AAGX,MAAM,CAAC;EACJ,KAAK,EAAE,IAAI;CACd",
     "sources": [
-        "../../scss/main.scss",
-        "../../scss/_reset.scss",
-        "../../scss/_variables.scss"
+        "../scss/main.scss",
+        "../scss/_reset.scss",
+        "../scss/_variables.scss"
     ],
     "names": [],
     "file": "main.css"
