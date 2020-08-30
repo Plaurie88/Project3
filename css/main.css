@@ -152,7 +152,7 @@
 
 .nav .menu-nav__item.active > a {
   color: #ff652f;
-  border-bottom: 1px groove;
+  border-bottom: 1px solid;
 }
 
 .nav .menu-nav__link {
@@ -197,8 +197,8 @@
 .about__bio-image {
   height: 50vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(39, 39, 39, 0.3))), url("../images/2019Work2.png") center top;
-  background: linear-gradient(to bottom rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../images/2019Work2.png") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.3))), url("../images/2019Work2.png") center top;
+  background: linear-gradient(to right rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../images/2019Work2.png") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,6 +222,11 @@
 .about__bio {
   width: 80%;
   text-align: center;
+  /*
+        p{
+            background: lighten($primary-color, 5%);
+        }
+*/
 }
 
 .about__bio .text-secondary {
@@ -277,7 +282,7 @@
 }
 
 .projects__bio-image {
-  height: 45vh;
+  height: 30vh;
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(39, 39, 39, 0.3))), url("../images/2019Work2.png") center top;
   background: linear-gradient(to bottom rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../images/2019Work2.png") center top;
@@ -426,6 +431,62 @@
 .contact .social-icons {
   position: initial;
   margin-top: 2rem;
+}
+
+@media screen and (min-width: 786px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+  }
+  .about__bio {
+    font-size: 1.5rem;
+  }
+  .projects__bio-image {
+    height: 40vh;
+  }
+  .projects__items {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .contact__list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .projects__items {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .projects__bio-image {
+    height: 50vh;
+  }
+  .projects__items {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /*  1rem = 16px
