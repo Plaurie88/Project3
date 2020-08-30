@@ -1,6 +1,15 @@
 @import 'config';
 @import 'home';
 @import 'menu';
+@import 'about';
+@import 'projects';
+
+
+
+/*  1rem = 16px
+    vh = Viewport Height
+    vw = Viewport Width
+*/
 
 body {
     background: $primary-color;
@@ -12,6 +21,10 @@ body {
 
 h1, h2, h3 {
     font-weight: 400;
+}
+
+.text-secondary{
+    color:$secondary-color;
 }
 
 a {

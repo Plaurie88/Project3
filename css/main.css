@@ -31,6 +31,7 @@
   font-weight: 700;
 }
 
+/*Burger menu code, transition from burger to X */
 .menu-btn {
   position: absolute;
   z-index: 1;
@@ -93,6 +94,7 @@
           transform: rotate(-45deg) translate(3px, -7px);
 }
 
+/*Menu selector and Nav direactions */
 .nav {
   position: fixed;
   top: 0;
@@ -150,6 +152,7 @@
 
 .nav .menu-nav__item.active > a {
   color: #ff652f;
+  border-bottom: 1px groove;
 }
 
 .nav .menu-nav__link {
@@ -166,6 +169,7 @@
   color: #ff652f;
 }
 
+/*Delay on nav menu items coming in.*/
 .menu-nav__item:nth-child(1) {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
@@ -186,7 +190,91 @@
           transition-delay: 0.55s;
 }
 
-/*tutorial vid time 1:07:54 righto night night :) */
+.about {
+  padding-bottom: 2rem;
+}
+
+.about__bio-image {
+  height: 50vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(39, 39, 39, 0.3))), url("../images/2019Work2.png") center top;
+  background: linear-gradient(to bottom rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../images/2019Work2.png") center top;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.about__bio-image p {
+  margin-bottom: 2rem;
+}
+
+.about__bio {
+  width: 80%;
+  text-align: center;
+}
+
+.about__bio .text-secondary {
+  padding-bottom: 1rem;
+}
+
+.about .jobs {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.about .jobs__job {
+  background: #414141;
+  padding: 0.5rem;
+  border-bottom: 5px solid #ff652f;
+  border-right: 1px solid #ff652f;
+  border-radius: 1em 1em 1em 1em;
+}
+
+.about .jobs__job h2, .about .jobs__job h3 {
+  margin: 1rem 0;
+}
+
+.about .jobs__job h6 {
+  margin: 0.5rem 0;
+  border-bottom: 1.5px solid #ff652f;
+  font-size: 1rem;
+}
+
+.about .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about footer {
+  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
+          transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+/*  1rem = 16px
+    vh = Viewport Height
+    vw = Viewport Width
+*/
 body {
   background: #272727;
   color: #fff;
@@ -197,6 +285,10 @@ body {
 
 h1, h2, h3 {
   font-weight: 400;
+}
+
+.text-secondary {
+  color: #ff652f;
 }
 
 a {

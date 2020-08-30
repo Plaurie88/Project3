@@ -1,3 +1,4 @@
+/*Burger menu code, transition from burger to X */
 .menu-btn {
     position: absolute;
     z-index: 1;
@@ -51,7 +52,7 @@
         }
     }
 } 
-
+/*Menu selector and Nav direactions */
 .nav {
     position: fixed;
     top: 0;
@@ -91,6 +92,7 @@
 
           &.active > a {
             color: $secondary-color;
+            border-bottom: 1px groove;
           }
         }
 
@@ -109,11 +111,9 @@
     }
 
 }
-
+/*Delay on nav menu items coming in.*/
 @for $i  from 1 through 4 {
     .menu-nav__item:nth-child(#{$i}) {
         transition-delay: ($i * 0.1s) + 0.15s;
     }
 }
-
-/*tutorial vid time 1:07:54 righto night night :) */
