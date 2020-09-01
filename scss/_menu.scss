@@ -16,7 +16,7 @@
         width: 28px;
         height: 3px;
         background: set-text-color($primary-color);
-        @include transition-ease
+        @include transition-ease;
 
         &::before {
             content: '';
@@ -25,7 +25,7 @@
             width: 28px;
             height: 3px;
             background: set-text-color($primary-color);
-            @include transition-ease
+            @include transition-ease;
         }
         &::after {
             content: '';
@@ -34,7 +34,7 @@
             width: 20px;
             height: 3px;
             background: set-text-color($primary-color);
-            @include transition-ease
+            @include transition-ease;
         }
 
         &.open {
